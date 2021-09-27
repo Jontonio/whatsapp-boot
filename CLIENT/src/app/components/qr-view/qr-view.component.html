@@ -1,0 +1,4 @@
+<button (click)="generate()">generate qr</button>
+<div *ngIf="dataservice.linkQR">
+    <qr-code [value]="dataservice.linkQR" size="300" errorCorrectionLevel="M"></qr-code>
+</div>
